@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quattrocento', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: tomato;
+}
+
+textarea {
+  resize: none;
+  border-radius: 5px;
+}
+
+/* Globals*/
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.darker-overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.btn-crimson {
+  background-color: crimson;
+  color: white;
+}
+
+.btn-crimson:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.text-crimson {
+  color: crimson;
+}
+
+.text-tomato {
+  color: tomato;
+}
+
+.header-font {
+  font-family: 'Coustard', serif;
+}
+
+.bg-gray {
+  background-color: rgb(211,211,211, 0.3);
+}
+
+/* Navbar */
+.nav-link {
+  color: black;
+}
+.navbar {
+  border-bottom: 2px solid crimson;
+}
+
+.navbar .nav-item:hover {
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Home Page */
+.homepage {
+  height: 100vh;
+}
+
+.home-content {
+  background-image: url('../images/home-image.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.homepage-text-container {
+  color: white;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  margin: auto;
+  width: 330px;
+	height: 250px; 
+}
+
+.homepage-header {
+  font-size: 3rem;
+  text-shadow: 2px 2px black;
+}
+
+.homepage-text {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px black;
+}
+
+.image-container {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+
+/* Page Header */
+#page-header {
+	background-image: url("https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+	background-size: cover;
+	height: 130px;
+	text-align: center;
+  position: relative;
+}
+
+#page-header h2 {
+  font-family: 'Kreon', serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+}
+
+#page-header .row {
+	margin: 0;
+}
+
+/* Rooms */
+.room-cards {
+  transition: transform 0.3s;
+}
+
+.room-cards:hover {
+  transform: scale(1.02);
+}
+
+/* Gallery */
+.wrap {
+  overflow: hidden;
+  margin: 10px;
+}
+
+.box {
+  float: left;
+  position: relative;
+  width: 33%;
+  padding-bottom: 33%;
+}
+
+.boxInner {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.boxInner img {
+  width: 100%;
+}
+
+.boxInner .titleBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+  margin-bottom: 0;
+}
+
+/* Promo */
+.bg-promo {
+  background-image: url('https://images.pexels.com/photos/1560065/pexels-photo-1560065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  background-repeat: no-repeat;
+}
+
+.bg-review {
+  background-image: url('https://images.pexels.com/photos/275845/pexels-photo-275845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  background-repeat: no-repeat;
+}
+
+/* Login */
+#login {
+	background-image: url("https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+  background-size: cover;
+	text-align: center;
+  position: relative;
+  height: 90vh;
+}
+
+/* Register */
+#register {
+	background-image: url("https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+  background-size: cover;
+	text-align: center;
+  position: relative;
+  height: 120vh;
+}
+
+/* Bookings */
+.booking-cards {
+  transition: transform 0.3s;
+}
+
+.booking-cards:hover {
+  transform: scale(1.02);
+}
+
+.bg-bookings {
+  background-image: url("https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500");
+	background-position: center;
+  background-size: cover;
+	text-align: center;
+  position: relative;
+  height: 90vh;
+}
+
+#bookings thead {
+  color: crimson
+}
+
+#bookings tbody tr:hover {
+  background-color: rgba(255, 99, 71, 0.2)
+}
+
+/* Reviews */
+.review-cards {
+  transition: transform 0.3s;
+}
+
+.review-cards:hover {
+  transform: scale(1.02);
+}
+
+/* User Dashboard */
+#user-dashboard nav {
+  background-color: rgba(255, 99, 71, 0.2);
+  height: 100vh;
+}
+
+#user-dashboard .dashboard-links:hover {
+  background-color: crimson;
+}
+
+#user-dashboard .dashboard-links:hover a {
+  color: white;
+}
+
+.dashboard-date {
+  font-size: 1.2rem;
+}
+
+.user-card {
+  background-color: darkkhaki;
+  border-radius: 10px;
+  width: 23rem;
+  height: 13rem;
+}
+
+.user-card img {
+  margin-left: 280px;
+  margin-top: 10px;
+}
+
+.user-card-name {
+  margin-top: 45px;
+  margin-left: 10px;
+}
+
+/* Footer */
+#footer {
+  background-color: white;
+  color: black;
+  border-top: 2px solid crimson;
+}
+
+
