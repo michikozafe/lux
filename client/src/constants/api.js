@@ -1,2 +1,2 @@
 // export const appUrl = 'http://localhost:5000/api/'
-export const appUrl = "https://shrouded-bayou-94181.herokuapp.com/api/";
+export const appUrl = "https://lux-062019.herokuapp.com/api/";
