@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { check, validationResult} = require('express-validator/check');
-const upload = require('../../middleware/upload');
 
 const Room = require('../../models/Room');
 
@@ -10,13 +9,13 @@ const Room = require('../../models/Room');
 //  @desc    Create a room
 //  @access  Private
 
-router.post('/create', [upload.single('image'), [
+router.post('/create', [
   check('name', 'Name is required').not().isEmpty(),
   check('floor', 'Floor is required').not().isEmpty(),
   check('price', 'Price is required').not().isEmpty(),
   check('capacity', 'Capacity is required').not().isEmpty(),
   check('description', 'Description is required').not().isEmpty()
-]],
+],
 async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
